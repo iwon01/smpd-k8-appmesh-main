@@ -15,6 +15,6 @@ ARG version
 ENV artifact ${artifactid}-${version}.jar
 WORKDIR /app
 COPY --from=build /app/target/${artifact} /app
-EXPOSE 10002
+EXPOSE 10000
 ENTRYPOINT ["sh", "-c"]
 CMD ["java -jar ${artifact}"]
