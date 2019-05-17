@@ -30,8 +30,8 @@ public class AppmeshMainApplication {
     @Scheduled(fixedDelay = 5000)
     public void logCalls() {
         Response responseSub = restTemplate.getForObject(subUrl, Response.class);
-        Response responseOuter = restTemplate.getForObject(outerUrl, Response.class);
         log.info(responseSub);
+        Response responseOuter = restTemplate.getForObject(outerUrl, Response.class);
         log.info(responseOuter);
     }
 
