@@ -31,8 +31,8 @@ public class AppmeshMainApplication {
     public void logCalls() {
         Response responseSub = restTemplate.getForObject(subUrl, Response.class);
         log.info(responseSub);
-        Response responseOuter = restTemplate.getForObject(outerUrl, Response.class);
-        log.info(responseOuter);
+        //Response responseOuter = restTemplate.getForObject(outerUrl, Response.class);
+        //log.info(responseOuter);
     }
 
 
